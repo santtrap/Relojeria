@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relojeria</title>
+  <link rel="stylesheet" href="style.css" />
+  <a href="galeria.html" class="boton-vermas">Ver más</a>
+</head>
+<body>
+  <header>
+    <h1>⌚ Relojes Elegantes y con mucho estilo</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <h2>Estilo y precisión en cada segundo</h2>
+      <p> Encuentra el reloj perfecto para ti.</p>
+      <a href="#catalogo" class="boton">Ver catálogo</a>
+    </div>
+  </section>
+
+ <section id="catalogo" class="catalogo">
+  <h2>Galería de Relojes</h2>
+  
+  <div class="relojes">
+    <div class="reloj"><img src="imagenes/1.jpeg" alt="Reloj 1"></div>
+    <div class="reloj"><img src="imagenes/2.jpeg" alt="Reloj 2"></div>
+    <div class="reloj"><img src="imagenes/3.jpeg" alt="Reloj 3"></div>
+    <div class="reloj"><img src="imagenes/4.jpeg" alt="Reloj 4"></div>
+    <div class="reloj"><img src="imagenes/5.jpeg" alt="Reloj 5"></div>
+  </div>
+
+  <!-- Botón que lleva a la galería completa -->
+  <a href="galeria.html" class="boton-vermas">Ver más</a>
+</section>
+
+<!-- Script para mostrar más imágenes -->
+<script>
+  const btn = document.getElementById("verMasBtn");
+  const ocultos = document.querySelectorAll(".oculto");
+  let mostrado = false;
+
+  btn.addEventListener("click", () => {
+    if (!mostrado) {
+      ocultos.forEach(el => el.classList.remove("oculto"));
+      btn.textContent = "Ver menos";
+      mostrado = true;
+    } else {
+      ocultos.forEach(el => el.classList.add("oculto"));
+      btn.textContent = "Ver más";
+      mostrado = false;
+    }
+  });
+</script>
+
+  <section id="nosotros" class="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una tienda dedicada a ofrecer los mejores relojes del mercado. 
+    Combinamos elegancia, precisión y durabilidad para que cada cliente encuentre su estilo perfecto 😎.</p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Escribe tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Relojes Elegantes | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

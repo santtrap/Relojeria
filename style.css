@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* Fondo degradado de azul a morado */
+  background: linear-gradient(135deg, #1e3c72, #ffffff);
+  color: white;
+}
+/* === Estilos generales === */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #0693ca;
+  color: #000000;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* === Header === */
+header {
+  background-color: #000;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Hero === */
+.hero {
+  background: url("https://images.unsplash.com/photo-1518552782079-5c6adff0d3d5") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-texto h2 {
+  font-size: 2.5rem;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  background: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background: #e6b800;
+}
+
+/* === Catálogo === */
+.catalogo {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.catalogo {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.catalogo h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.relojes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.reloj {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reloj:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.reloj img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Oculta las imágenes adicionales */
+.oculto {
+  display: none;
+}
+
+/* Estilo del botón */
+.boton-vermas {
+  margin-top: 30px;
+  padding: 10px 25px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.boton-vermas:hover {
+  background-color: #333;
+}
+
+.reloj:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.reloj img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.reloj:hover {
+  transform: translateY(-5px);
+}
+
+.reloj img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.reloj h3 {
+  margin-top: 10px;
+}
+
+/* === Nosotros === */
+.nosotros {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* === Contacto === */
+.contacto {
+  padding: 50px 20px;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* === Footer === */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
